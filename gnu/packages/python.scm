@@ -419,11 +419,11 @@ data types.")
 ;; Current 2.x version.
 (define-public python-2 python-2.7)
 
-(define-public python-3.9
+(define-public python-3.11.0
   (package
     (inherit python-2)
     (name "python")
-    (version "3.9.9")
+    (version "3.11.0")
     (source (origin
               (method url-fetch)
               (uri (string-append "https://www.python.org/ftp/python/"
@@ -575,7 +575,7 @@ data types.")
             (files (list "share/zoneinfo")))))))
 
 ;; Current 3.x version.
-(define-public python-3 python-3.9)
+(define-public python-3 python-3.11)
 
 ;; Current major version.
 (define-public python python-3)
